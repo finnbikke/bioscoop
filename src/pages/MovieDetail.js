@@ -7,7 +7,7 @@ import { useUpdateTitle } from "../hooks/useUpdateTitle"
 export const MovieDetail = () => {
   const params = useParams()
   const [movie, setMovie] = useState({})
-  const pageTitle = useUpdateTitle(movie.title)
+  useUpdateTitle(movie.title)
   const image = movie.poster_path ? `https://themoviedb.org/t/p/w500/${movie.poster_path}` : Backup ;
 
 

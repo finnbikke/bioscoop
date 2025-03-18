@@ -6,7 +6,7 @@ import { useUpdateTitle } from "../hooks/useUpdateTitle";
 export const MovieList = ({apiPath, title}) => {
   const { data: movies } = useFetch(apiPath);
 
-  const pageTitle = useUpdateTitle(title)
+  useUpdateTitle(title)
 
 
     return (
